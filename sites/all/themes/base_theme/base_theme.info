@@ -1,0 +1,40 @@
+name        = base_theme
+description = A theme based on Radix.
+screenshot  = screenshot.png
+core        = 7.x
+
+; Base - Radix
+base theme  = radix
+
+
+; Regions
+regions[featured] = Featured
+regions[featured2] = Featured2
+regions[featured3] = Featured3
+regions[featured4] = Featured4
+regions[content] = Content
+regions[section1] = Section1
+regions[section2] = Section2
+regions[section3] = Section3
+
+; Panels
+plugins[panels][layouts] = panels/layouts
+plugins[panels][styles] = panels/styles
+
+; CSS - General
+stylesheets[all][]     = assets/stylesheets/screen.css
+stylesheets[print][]   = assets/stylesheets/print.css
+
+; CSS - Conditional
+stylesheets-conditional[lte IE 9][all][] = assets/stylesheets/ie.css
+stylesheets-conditional[IE 8][all][] = assets/stylesheets/ie8.css
+
+; Javascript
+scripts[] = assets/javascripts/script.js
+
+; Information added by Drupal.org packaging script on 2015-07-27
+version = "7.x-3.0-rc4"
+core = "7.x"
+;ewb project = "radix"
+datestamp = "1438012143"
+
